@@ -1,0 +1,4 @@
+React is indeed JavaScript. 
+We create a customReact file which give the idea of how react work. 
+In React we write JSX in html format but actually bundler convert it into js(array which store in tree format)
+And same like react also create a render function. but we call it in "<function/>" this function. But we can call it in function() this format also.

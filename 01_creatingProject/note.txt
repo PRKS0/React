@@ -1,0 +1,43 @@
+we have core react. From this we learn react-dom for web-app and react-native for mobile-app.
+
+1. Installing react
+    - npx create-react-app projectname  ---> but this take longer time and high internet speed
+    - npm create@latest where we have to select different things. But we do not get node modules folder. 
+        so we run "npm install" in absence of modules folder. This will install all the required package. 
+        from vite to run project we use: npm run dev (same as : npm run start)
+
+
+when we create react-project, inside package.json file, we get different libraries like react, react-dom, react-script, other testing libraries, web-vitals which we use to check our project performance
+
+we get some script also, like start, build, test, eject
+- start: to run project in developer environment 
+- build: to run project in production environment
+- test: during testing
+
+
+moreover in package.json file we get more things like in which browser does it work.
+
+running project:
+>>npm run start  ----> "start" is script which is for developer environment 
+
+
+
+we do most of the work from source folder and can delete any thing that we do not want fromt it. 
+
+
+
+tutorial:2
+we create SPA: single page app whcih means we have only one html file(public dir) and we are manipulating DOM for pages like(about, home, contact us)
+
+react create it's own DOM and compare with browser DOM and change accordingly.
+
+There is a link between index.html file of public dir and app.js, index.js file of src dir. And these are linked by "react-scripts" of dependencies of package.json folder. This react-scipt inject all the js file to index.html file.
+
+and then inside index.js file
+// here we are accessing the "root" div of index.html file thorugh createRoot method. 
+// we are rendering virtual_react-dom through .render method, where we have "app" tag(provided by react same like div tag in html.)
+// And this app tag is linked to the App function() of app.js file. And that function provide the facility to write html in js. 
+// At last, the app function of app.js file will be loaded/rendered to the index.html file of pubic folder.
+
+
+But we donot have react-script in vite. While vite directly inject/link all the script file in index.html file which is available outside the src folder.
